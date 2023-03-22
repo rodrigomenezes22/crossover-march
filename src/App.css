@@ -5,10 +5,14 @@
   --color-icons: rgb(17, 17, 48);
 
 }
+header {
+  background-color: #005555!important;
+}
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/hero1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/public/home.jpg");
 
   /* Set a specific height */
   height: 800px;
@@ -112,9 +116,14 @@ h4 {
   padding-top: 2%;
 }
 
+.agents-title {
+  margin-bottom: 100px;
+}
+
 .sectionAgents {
   width: 100%;
   display: flex;
+  padding: 6rem 0px;
 }
 
 .cardContainer {
@@ -123,8 +132,8 @@ h4 {
   justify-content: center;
   align-items: center;
   justify-content: center;
-  width: 500px;
-  margin: 1%;
+  width: 100%;
+
 }
 
 .cardContainer p {
@@ -134,12 +143,14 @@ h4 {
 }
 
 .card {
-  height: 300px;
-  width: 500px;
+  height: auto;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--color-background);
+  border: 0px;
+  padding-bottom: 2rem;
 }
 
 .agentsPhoto {
@@ -228,3 +239,21 @@ h4 {
   transition: 0.3s all ease;
 }
 
+.search-btn:hover {
+  background-color: white;
+}
+
+.navbar-item {
+  text-decoration: none;
+  color: #999;
+  padding: 0px 1rem;
+  transition: color;
+}
+
+.navbar-item:hover {
+  color: white;
+}
+
+.navbar-item.active { 
+  color: white;
+}
