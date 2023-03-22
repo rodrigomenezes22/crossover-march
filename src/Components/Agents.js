@@ -17,7 +17,7 @@ export default function Agents() {
     },
     headers: {
       // "content-type": "application/json",
-      "X-RapidAPI-Key": "a010d51f12msh19bbda2704386bcp14a7eejsn2d0694e86011",
+      "X-RapidAPI-Key": "2d5ef37aeemsh14a41a946a4a659p14d5e7jsn80fd59473f9b",
       "X-RapidAPI-Host": "realty-in-us.p.rapidapi.com",
     },
   };
@@ -39,8 +39,12 @@ export default function Agents() {
       <div className="container">
         <div className="row">
           <h2 className="text-center agents-title">Our Agents</h2>
-          {agents && agents.map((agent) => <div className="col-12 col-sm-12 col-md-6 col-lg-4"><AgentCard {...agent} key={agent.id} /></div>)}
-          
+          {agents &&
+            agents.map((agent) => (
+              <div className="col-12 col-sm-12 col-md-6 col-lg-4">
+                <AgentCard {...agent} key={agent.id} />
+              </div>
+            ))}
         </div>
       </div>
     </section>

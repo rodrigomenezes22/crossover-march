@@ -7,12 +7,9 @@ export default function Header() {
       <NavBar />
       <div className="hero-section" id="home">
         <div className="hero-image">
-          <div className="hero-text">
-
-          </div>
+          <div className="hero-text"></div>
         </div>
       </div>
-      <ItemDetails/>
     </div>
   );
 }
