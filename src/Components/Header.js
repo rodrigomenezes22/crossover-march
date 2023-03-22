@@ -1,6 +1,6 @@
 import NavBar from "./NavBar";
 import "../App.css";
-import ItemDetails from "./ItemDetails";
+
 export default function Header() {
   return (
     <div>
@@ -12,7 +12,7 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <ItemDetails/>
+
     </div>
   );
 }
