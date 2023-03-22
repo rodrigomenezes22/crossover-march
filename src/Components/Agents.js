@@ -36,10 +36,7 @@ export default function Agents() {
 
   return (
     <section className="sectionAgents">
-      {agents &&
-        agents.map((agent) => (
-          <AgentCard {...agent} key={agent.avertiser_id} />
-        ))}
+      {agents && agents.map((agent) => <AgentCard {...agent} key={agent.id} />)}
     </section>
   );
 }
