@@ -6,16 +6,18 @@ import { useState } from "react";
 function Search() {
   const [inputValue, setInputValue] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const { city } = useParams();
+
   const navigate = useNavigate();
 
-  console.log(city);
+
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
   };
 
   const handleSearchSubmit = (e) => {
-    navigate(`/search/${city}`);
+    if(inputValue !== "") {
+      navigate(`/search/${inputValue}`);
+    }
   };
 
   return (
@@ -40,6 +42,7 @@ function Search() {
           <button type="submit" class="btn search-btn">
             Search
           </button>
+          {}
         </form>
       </div>
     </div>

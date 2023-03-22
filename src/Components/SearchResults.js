@@ -38,7 +38,7 @@ function SearchResults() {
         <div className='container'>
             <div className='row'>
         
-                {results && results.map((home) => (<div className='col-12 col-md-6 col-lg-4 col-xl-4' key={home.listing_id}><Unit image={home?.primary_photo.href} name={home?.listing_id} price={home?.list_price} address={home?.location.address.line} city={home?.location.address.city} state={home?.location.address.state_code} country={home?.location.address.country} beds={home?.description.beds} bath={home?.description.baths} url={home.href} /></div>))}
+                {results && results.map((home) => (<div className='col-12 col-md-6 col-lg-4 col-xl-4' key={home.listing_id}><Unit image={home?.primary_photo.href} name={home?.listing_id} price={home?.list_price} address={home?.location.address.line} city={home?.location.address.city} state={home?.location.address.state_code} country={home?.location.address.country} beds={home?.description.beds} bath={home?.description.baths} url={home?.href} /></div>))}
 
             </div>
         </div>
