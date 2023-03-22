@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import MenuIcon from "@mui/icons-material/Menu";
+import { NavLink , Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -28,11 +29,11 @@ export default function Header() {
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           Property Finder
         </Typography>
-        <Button color="inherit">Home</Button>
-        <Button color="inherit">Properties</Button>
-        <Button color="inherit">Services</Button>
-        <Button color="inherit">About</Button>
-        <Button color="inherit">Contact Us</Button>
+        <NavLink className="navbar-item" to="/" color="inherit">Home</NavLink>
+        <NavLink className="navbar-item" to="/search/new york"  color="inherit">New York</NavLink>
+        <NavLink className="navbar-item" to="/search/chicago"  color="inherit">Chicago</NavLink>
+        <NavLink className="navbar-item" to="/search/washington"  color="inherit">Washington</NavLink>
+
       </Toolbar>
     </AppBar>
   );

@@ -11,7 +11,7 @@ export default function Agents() {
     params: {
       postal_code: "11234",
       offset: "0",
-      limit: "20",
+      limit: "3",
       sort: "recent_activity_high",
       types: "agent",
     },
@@ -35,8 +35,14 @@ export default function Agents() {
   }, []);
 
   return (
-    <section className="sectionAgents">
-      {agents && agents.map((agent) => <AgentCard {...agent} key={agent.id} />)}
+    <section className="sectionAgents bg-light">
+      <div className="container">
+        <div className="row">
+          <h2 className="text-center agents-title">Our Agents</h2>
+          {agents && agents.map((agent) => <div className="col-12 col-sm-12 col-md-6 col-lg-4"><AgentCard {...agent} key={agent.id} /></div>)}
+          
+        </div>
+      </div>
     </section>
   );
 }

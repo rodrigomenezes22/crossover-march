@@ -15,6 +15,7 @@ function Search() {
   };
 
   const handleSearchSubmit = (e) => {
+    e.preventDefault();
     if(inputValue !== "") {
       navigate(`/search/${inputValue}`);
     }
@@ -23,7 +24,7 @@ function Search() {
   return (
     <div>
       <div class="col-lg-9 text-center position-absolute top-50 start-50 translate-middle">
-        <h1 class="heading aos-init aos-animate" data-aos="fade-up">
+        <h1 class="heading aos-init aos-animate text-white" data-aos="fade-up">
           Easiest way to find your dream home
         </h1>
         <form
@@ -39,7 +40,7 @@ function Search() {
             placeholder="Your City. e.g. New York"
             onChange={handleInputChange}
           />
-          <button type="submit" class="btn search-btn">
+          <button type="submit" className="btn search-btn">
             Search
           </button>
           {}

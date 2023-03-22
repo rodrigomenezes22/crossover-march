@@ -5,7 +5,7 @@ import Search from "./Search";
 function Home() {
   return (
     <div>
-      <Link to="/search/chicago">Chicago</Link>
+
     </div>
   );
 }
