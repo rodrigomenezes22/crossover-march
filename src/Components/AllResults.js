@@ -17,7 +17,7 @@ function AllResults() {
           'X-RapidAPI-Key': '60d8a2760bmshb7963e82b124735p173e03jsnab27911f181c',
           'X-RapidAPI-Host': 'realtor.p.rapidapi.com'
         },
-        data: `{"limit":10,"offset":0,"city":"new york","status":["for_sale","ready_to_build"],"sort":{"direction":"desc","field":"list_date"}}`
+        data: '{"limit":10,"offset":0,"city":"chicago","status":["for_sale","ready_to_build"],"sort":{"direction":"desc","field":"list_date"}}'
       };
     //   Fetch Data
       useEffect(()=> {
@@ -34,7 +34,13 @@ function AllResults() {
 
   return (
     <div>
-      
+        <div className='container'>
+            <div className='row'>
+        
+            {results && results.map((home) => (<div className='col-12 col-md-6 col-lg-4 col-xl-4' key={home.listing_id}><Unit image={home?.primary_photo.href} name={home?.listing_id} price={home?.list_price} address={home?.location.address.line} state={home?.location.address.state_code} city={home?.location.address.city} country={home?.location.address.country} beds={home?.description.beds} bath={home?.description.baths} url={home?.listing_id} /></div>))}
+
+            </div>
+        </div>
     </div>
   )
 }

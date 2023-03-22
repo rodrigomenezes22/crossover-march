@@ -35,7 +35,13 @@ function SearchResults() {
 
   return (
     <div>
-      {results && results.map((home) => (<div key={home.listing_id}><Unit image={home.listing_id} name={home.listing_id} price={home.listing_id} address={home.listing_id} state={home.listing_id} country={home.listing_id} beds={home.listing_id} bath={home.listing_id} url={home.listing_id} /></div>))}
+        <div className='container'>
+            <div className='row'>
+        
+                {results && results.map((home) => (<div className='col-12 col-md-6 col-lg-4 col-xl-4' key={home.listing_id}><Unit image={home?.primary_photo.href} name={home?.listing_id} price={home?.list_price} address={home?.location.address.line} city={home?.location.address.city} state={home?.location.address.state_code} country={home?.location.address.country} beds={home?.description.beds} bath={home?.description.baths} url={home.href} /></div>))}
+
+            </div>
+        </div>
     </div>
   )
 }

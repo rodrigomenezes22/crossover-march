@@ -1,6 +1,65 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+.listings {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin: 1rem;
+  border: 1px solid #F1F1F1;
+  background-color: white;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary { 
+  background-color: #005555!important;
+  border: none!important;
+  border-radius: 50px;
+  display: block;
+  width: 150px;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.listings-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.listings-body h2 {
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #000055;
+}
+
+.listings-body h4 {
+  font-size: 13px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5) !important
+}
+
+.listings-body h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  padding-bottom: .5rem;
+}
+
+.amenities {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: 13px;
+  color: gray;
+  padding-bottom: 1rem;
+}
+.amenities span {
+  padding: 0rem .5rem;
+}
+
 .App {
   text-align: center;
 }
