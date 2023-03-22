@@ -1,9 +1,10 @@
-import './App.css';
+import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
-import SearchResults from './Components/SearchResults';
+import SearchResults from "./Components/SearchResults";
+import Agents from "./Components/Agents";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/search" element={<SearchResults />} />
         </Routes>
       </main>
+      <Agents />
       <Footer />
     </>
   );
