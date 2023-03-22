@@ -4,8 +4,10 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import SearchResults from "./Components/SearchResults";
+import Agents from "./Components/Agents";
 import AllResults from "./Components/AllResults";
 import Search from "./Components/Search";
+
 function App() {
   return (
     <>
@@ -18,6 +20,7 @@ function App() {
           <Route path="/search/:city" element={<SearchResults />} />
         </Routes>
       </main>
+      <Agents />
       <Footer />
     </>
   );
