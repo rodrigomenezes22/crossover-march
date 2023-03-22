@@ -1,13 +1,13 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import Search from "./Search";
 
 function Home() {
   return (
     <div>
-      Home
-        <Link to="/search/chicago">Chicago</Link>
+      <Link to="/search/chicago">Chicago</Link>
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
