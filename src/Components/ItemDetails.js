@@ -10,7 +10,7 @@ function ItemDetails() {
     url: "https://realty-in-us.p.rapidapi.com/properties/v3/list",
     headers: {
       "content-type": "application/json",
-      "X-RapidAPI-Key": "2a99c8f368msh72cedc0a92effbap1e326djsn7d451f2ba3de",
+      "X-RapidAPI-Key": "2d5ef37aeemsh14a41a946a4a659p14d5e7jsn80fd59473f9b",
       "X-RapidAPI-Host": "realty-in-us.p.rapidapi.com",
     },
     data: '{"limit":3,"offset":0,"postal_code":"90004","status":["for_sale","ready_to_build"],"sort":{"direction":"desc","field":"list_date"}}',
